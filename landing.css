@@ -1,196 +1,104 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.imagediv img{
-     height: 400px;
-    width: 100%; 
-    object-fit: cover;
-    
-
-}
-.herosection{
-    display: flex;
-   justify-content:top;
-   align-items:top;
-
-    width: 100%;
-    background-color:#e6e6e67e;
- 
-}
-.headingdiv{
-    width: 50%;
-    margin-top: 30px;
-    margin-left: 70px;
-        
-}
-.imagediv{
-    width: 50%;
-}
-h1{
-    font-size: 50px;
-  width: 300px;
-}
-.headingdiv p{
-    font-size: 20px;
-    margin-top: 10px;
-}
-.submitbutton{
-    background-color: rgb(11, 154, 202);
-    color: white;
-    font-size: 18px;
-    margin-top: 20px;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-}
-.feature{
-    margin-top: 30px;
-    margin-left: 70px;
-    margin-bottom: 40px;
-}
-.feature h2{
-    font-size: 35px;
-}
-.feature p{
-    font-size: 20px;
-   margin-top: 10px;
-   color: rgba(0, 0, 0, 0.801);
-   font-weight: 800;
-}
-.featureitem{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction:row ;
-margin: 40px 20px 30px 20px;
-margin-right: 70px;
-margin-top: 30px;
-
-}
-.fastperfomance i{
-font-size: 77px;
-margin-bottom: 26px;
-display:flex ;
-align-items: center;
-justify-content: center;
-}
-.fastperfomance p{
-    font-size: 20px;
-   margin-top: 10px;
-   color: rgba(0, 0, 0, 0.801);
-   font-weight: 800;
-  
-    
-}
-.smarnectitconvity i{
-font-size: 77px;
-margin-bottom: 26px;
-display:flex ;
-align-items:center;
-
-
-justify-content: center;
 
 
 
-}
-.smarnectitconvity p{
-   font-size: 20px;
-   margin-top: 10px;
-   color: rgba(0, 0, 0, 0.801);
-   font-weight: 800;
-}
-.Ecofriendly i{
-font-size: 77px;
-margin-bottom: 26px;
-display:flex ;
-align-items:center;
-
-
-justify-content: center;
-}
-.Ecofriendly p{
-    font-size: 20px;
-   margin-top: 10px;
-   color: rgba(0, 0, 0, 0.801);
-   font-weight: 800;
-
-}
-.about{
-display: flex;
-    justify-content: space-between; 
-     align-items: top;
-    /* margin-top: 30px; */
-    margin-right: 70px;
-    margin-left: 70px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  
-} 
-
-
-.about h2{
-    font-size: 35px;
-    padding-bottom: 10px;
-} 
-.about img{
-    height: 383px;
-    width:654px;
-    object-fit: cover;
-    border-radius: 10px;
-
+@media (max-width: 1024px) {
+    .herosection {
+        flex-direction: column;
+        text-align: center;
+    }
+    .headingdiv, .imagediv {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    .headingdiv {
+        margin-top: 20px;
+    }
+    h1 {
+        width: auto;
+        font-size: 40px;
+    }
+    .featureitem {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imformation p {
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+    }
+    .about img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-.imformation p{
-
-font-size: 27px;
-width: 600px;
-color: rgba(0, 0, 0, 0.801);
-
- 
- }
- .form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-
- }
- .email{
-    width: 90%;
-    height: 60px;
-     background-color:#e6e6e6d2;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly; 
-    border-radius: 10px;
-    padding-top: 7px;
-    padding-bottom: 7px;
- }
- .email input{
-    width: 80%;
-    height: 50px;
-    /* padding-left:10px ; */
-    border: none;
-    background-color:#e6e6e6d2;
-  border-radius: 10px;
-  font-size: 18px;
-  outline: none;
-
-  
- }
-.email button{
-  padding: 15px;
-    border-radius: 10px;
-    border: none;
-    background-color: black;
-    color: white;
-    width:150px;
-    font-size: 18px;
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+    .headingdiv p,
+    .feature p,
+    .fastperfomance p,
+    .smarnectitconvity p,
+    .Ecofriendly p {
+        font-size: 18px;
+    }
+    .featureitem {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .fastperfomance i,
+    .smarnectitconvity i,
+    .Ecofriendly i {
+        font-size: 60px;
+    }
+    .about h2 {
+        font-size: 28px;
+    }
+    .imformation p {
+        font-size: 20px;
+    }
+    .email {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+    .email input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .email button {
+        width: 100%;
+    }
 }
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+    .headingdiv p,
+    .feature p {
+        font-size: 16px;
+    }
+    .fastperfomance i,
+    .smarnectitconvity i,
+    .Ecofriendly i {
+        font-size: 50px;
+    }
+}
+
